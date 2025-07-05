@@ -28,8 +28,8 @@ st.write("以下の項目に入力してください。")
 with st.form(key='upload_form'):
 
     artist_name = st.text_input("### アーティスト名（必須）")
-    title = st.text_input("作品名（テーマ）")
-    description = st.text_area("作品に込めた想い", height=100)
+    title = st.text_input("作品名（テーマ）（必須）")
+    description = st.text_area("作品に込めた想い（必須）", height=100)
     additional_message = st.text_area("何か伝えたいことがあればこちらに！（任意）", height=100)
 
     st.markdown("#### 制作年月日")
